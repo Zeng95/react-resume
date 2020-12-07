@@ -10,6 +10,7 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
+    "@types/styled-components": "^5.1.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
@@ -18,8 +19,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "build:css": "postcss src/assets/tailwind.css -o src/assets/styles.css",
-    "watch:css": "postcss src/assets/tailwind.css -o src/assets/styles.css",
+    "build:css": "postcss src/assets/css/tailwind.css -o src/assets/css/main.css",
+    "watch:css": "postcss src/assets/css/tailwind.css -o src/assets/css/main.css",
     "start": "yarn run watch:css & react-scripts start",
     "build": "yarn run build:css & react-scripts build",
     "test": "react-scripts test",
@@ -44,7 +45,6 @@
     ]
   },
   "devDependencies": {
-    "@types/styled-components": "^5.1.4",
     "autoprefixer": "^10.0.4",
     "babel-plugin-macros": "^3.0.0",
     "postcss": "^8.1.14",
